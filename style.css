@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 600px;
+    height: 600px;
+    border: solid 3px black;
+    background-color:rgba(0, 0, 0, 0.484);
+    position: relative;
+}
+.frog{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+    background-image: url(./img/frog.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.second{
+    position: absolute;
+    top: 10px;
+    left: 10px ;
+}
+.score{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.level{
+    font-size: 50px;
+    color: brown;
+    position: absolute;
+    top: 10px;
+}
+.forest{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.reload{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(86, 231, 86);
+    border-radius: 50%;
+    border: none;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.reload:hover{
+    scale: 1.1;
+}
+.reload:active{
+    scale: 0.9;
+}
+.lose{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 220px;
+    font-size: 40px;
+    display: none;
+}
+.info{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(84, 217, 241);
+    border-radius: 50%;
+    border: none;
+    bottom: 10px;
+    right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.info:hover{
+    scale: 1.1;
+}
+.info:active{
+    scale: 0.9;
+}
+.info-text{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 149, 197, 0.767);
+    position: absolute;
+    z-index: 2;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    display: none;
+}
